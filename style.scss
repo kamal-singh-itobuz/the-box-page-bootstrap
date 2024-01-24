@@ -1,5 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap");
+* {
+  font-family: "Work Sans", sans-serif !important;
+}
+
+@mixin font-style($name, $color, $weight, $size) {
+    .#{$name} {
+      color: $color;
+      font-weight: $weight;
+      font-size: $size;
+    }
+}
+
+$blue-color: #2947A9;
+
 .hero-section {
     background-image: url("./images/hero-section/hero.png");
     background-size: cover;
     height: 80vh;
+    >h1 {
+        font-size: 70px;
+        font-weight: bold;
+    }
+    >div {
+        width: 320px;
+        height: 140px;
+    }
 }
+
+// REPUTATION SECTION
+.reputation-content div{
+    height: 170px;
+    width: 300px;
+}
+hr{
+    width: 50px;
+    height: 2px;
+}
+
+//ABOUT US SECTION
+.about-us-section {
+    max-width: 70rem;
+  }
+  .about-button {
+    color: $blue-color !important;
+  }
+  
+  .section-content {
+    background-color: $blue-color;
+    color: white;
+    right: 0;
+    top: 15%;
+  }
+  @include font-style("content", white, 400, 17.5px);
+  @media (min-width: 992px) {
+    .about-image {
+        width: 65%;
+        aspect-ratio: 7/5;
+    }
+    
+    .section-content {
+        position: absolute;
+        width: 40%;
+        height: 90%;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+// SERVICE SECTION
+@mixin services-cards-mixin($name, $bg, $color) {
+    .service-#{$name} {
+        background-color: $bg;
+        color: $color;
+        height: 170px;
+        width: 260px;
+    }
+}
+@include services-cards-mixin("construction", white, $blue-color);
+@include services-cards-mixin("renovation", $blue-color, white);
+@include services-cards-mixin("consultation", white, $blue-color);
+@include services-cards-mixin("repair", $blue-color, white);
+@include services-cards-mixin("architecture", white, $blue-color);
+@include services-cards-mixin("electric", $blue-color, white);
+.service-cards{
+    max-width: 70rem;
+    gap: 40px 80px;
+}
+
+// EXPERIENCE SECTION
+.experience-content{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .experience-common{
+        box-shadow: 4px 4px 10px gray;
+        height: 150px;
+        width: 280px;
+        div {
+            height: 150px;
+            img{
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+    .experience-c1 {
+        top: 25px;
+        .img1 {
+            top: -30px;
+            right: -17px;
+        }
+    }
+    .experience-c2 {
+        top: 210px;
+        .img2 {
+            top: -36px;
+            right: 237px;
+        }
+    }
+    .experience-c3 {
+        top: 390px;
+        .img3 {
+            top: -19px;
+            right: -15px;
+        }
+    }
+    .experience-c4 {
+        top: 572px;
+        .img4 {
+            top: 122px;
+            right: -15px;
+        }
+    }
+}
+
+@media (min-width: 650px) {
+    .experience-content {
+        height: 610px;
+        width: 650px;
+        .experience-c1 {
+            right: 40px;
+            top: 45px;
+        }
+        .experience-c2 {
+            right: 230px;
+            top: 176px;
+        }
+        .experience-c3 {
+            right: 75px;
+            top: 300px;
+        }
+        .experience-c4 {
+            right: 210px;
+            top: 430px;
+        }
+    }
+}
+
+// ADS SECTION
+.ads-section {
+    background-image: url("ads.png");
+}
+// PROJECTS SECTION
+.project-left p{
+    margin-bottom: 8px;
+    padding-left: 12px;
+}
+.project-demo{
+    .image-container{
+        width: 100%;
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+// CTA SECTION
+.cta-section form{
+    max-width: 40rem;
+    input, textarea{
+        outline: none;
+    }
+}
+

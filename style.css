@@ -1,5 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap");
+* {
+  font-family: "Work Sans", sans-serif !important;
+}
+
 .hero-section {
   background-image: url("./images/hero-section/hero.png");
   background-size: cover;
   height: 80vh;
+}
+.hero-section > h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+.hero-section > div {
+  width: 320px;
+  height: 140px;
+}
+
+.reputation-content div {
+  height: 170px;
+  width: 300px;
+}
+
+hr {
+  width: 50px;
+  height: 2px;
+}
+
+.about-us-section {
+  max-width: 70rem;
+}
+
+.about-button {
+  color: #2947A9 !important;
+}
+
+.section-content {
+  background-color: #2947A9;
+  color: white;
+  right: 0;
+  top: 15%;
+}
+
+.content {
+  color: white;
+  font-weight: 400;
+  font-size: 17.5px;
+}
+
+@media (min-width: 992px) {
+  .about-image {
+    width: 65%;
+    aspect-ratio: 7/5;
+  }
+  .section-content {
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+.service-construction {
+  background-color: white;
+  color: #2947A9;
+  height: 170px;
+  width: 260px;
+}
+
+.service-renovation {
+  background-color: #2947A9;
+  color: white;
+  height: 170px;
+  width: 260px;
+}
+
+.service-consultation {
+  background-color: white;
+  color: #2947A9;
+  height: 170px;
+  width: 260px;
+}
+
+.service-repair {
+  background-color: #2947A9;
+  color: white;
+  height: 170px;
+  width: 260px;
+}
+
+.service-architecture {
+  background-color: white;
+  color: #2947A9;
+  height: 170px;
+  width: 260px;
+}
+
+.service-electric {
+  background-color: #2947A9;
+  color: white;
+  height: 170px;
+  width: 260px;
+}
+
+.service-cards {
+  max-width: 70rem;
+  gap: 40px 80px;
+}
+
+.experience-content {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experience-content .experience-common {
+  box-shadow: 4px 4px 10px gray;
+  height: 150px;
+  width: 280px;
+}
+.experience-content .experience-common div {
+  height: 150px;
+}
+.experience-content .experience-common div img {
+  height: 50px;
+  width: 50px;
+}
+.experience-content .experience-c1 {
+  top: 25px;
+}
+.experience-content .experience-c1 .img1 {
+  top: -30px;
+  right: -17px;
+}
+.experience-content .experience-c2 {
+  top: 210px;
+}
+.experience-content .experience-c2 .img2 {
+  top: -36px;
+  right: 237px;
+}
+.experience-content .experience-c3 {
+  top: 390px;
+}
+.experience-content .experience-c3 .img3 {
+  top: -19px;
+  right: -15px;
+}
+.experience-content .experience-c4 {
+  top: 572px;
+}
+.experience-content .experience-c4 .img4 {
+  top: 122px;
+  right: -15px;
+}
+
+@media (min-width: 650px) {
+  .experience-content {
+    height: 610px;
+    width: 650px;
+  }
+  .experience-content .experience-c1 {
+    right: 40px;
+    top: 45px;
+  }
+  .experience-content .experience-c2 {
+    right: 230px;
+    top: 176px;
+  }
+  .experience-content .experience-c3 {
+    right: 75px;
+    top: 300px;
+  }
+  .experience-content .experience-c4 {
+    right: 210px;
+    top: 430px;
+  }
+}
+.ads-section {
+  background-image: url("ads.png");
+}
+
+.project-left p {
+  margin-bottom: 8px;
+  padding-left: 12px;
+}
+
+.project-demo .image-container {
+  width: 100%;
+}
+.project-demo .image-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.cta-section form {
+  max-width: 40rem;
+}
+.cta-section form input, .cta-section form textarea {
+  outline: none;
 }/*# sourceMappingURL=style.css.map */
